@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="FeedBack"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:hint="   user@email.com"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="textEmailAddress"-->
+    <!--android:ems="10"-->
+    <!--android:drawableLeft="@android:drawable/ic_dialog_email"-->
+    <!--android:id="@+id/user_email" />-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="   Subject"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="45dp"
+        android:background="@drawable/shapforlistin"
+        android:capitalize="sentences"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:id="@+id/subject" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/shapforlistin"
+        android:inputType="textCapSentences"
+        android:hint="     Message"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="left"
+        android:id="@+id/message" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <TextView
+            android:text="Cancel"
+            android:textSize="25dp"
+            android:layout_width="0dp"
+            android:gravity="right|center"
+            android:textStyle="bold"
+            android:paddingRight="35dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:id="@+id/cancel"
+            android:layout_weight="2" />
+
+        <TextView
+            android:text="Send"
+            android:gravity="right|center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:paddingRight="45dp"
+            android:layout_width="0dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:id="@+id/send"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Location Reminder" />
+        <item
+            android:id="@+id/nav_textnote"
+            android:icon="@drawable/ic_border_color_black_24dp"
+            android:title="Text Note" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="FeedBack" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_syncbackup"
+                android:icon="@drawable/ic_autorenew_black_24dp"
+                android:title="Sync / Backup" />
+        </menu>
+    </item>
+
+</menu>

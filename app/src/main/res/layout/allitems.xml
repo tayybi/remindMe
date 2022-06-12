@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/shapforlist"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Contact List"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/shapforbutton"
+        android:layout_height="40dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/shapforlist"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+            android:hint="Search "
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:id="@+id/contact_serch" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/allitems"/>
+
+
+
+
+</LinearLayout>

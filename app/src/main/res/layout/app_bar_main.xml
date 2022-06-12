@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.tayyabali.remindmefinel1.MainActivity">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:layout_weight="1" >
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main"
+
+
+        />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_backgroundColor="#b8f7a3"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        fab:menu_colorPressed="#00C29F"
+        fab:menu_colorRipple="#00C29F"
+        android:paddingRight="20dp"
+        android:paddingBottom="35dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_border_color_black_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Add TextNote"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_black_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Location Reminder"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

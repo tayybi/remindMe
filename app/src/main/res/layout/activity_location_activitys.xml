@@ -1,0 +1,127 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="      Back"
+            android:textAlignment="textStart"
+            android:background="@drawable/shapfortopbutton"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="             Save"
+            android:layout_width="match_parent"
+            android:background="@drawable/shapfortopbutton"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:background="@drawable/shapforlist"
+            android:textStyle="bold"
+            android:hint="Title"
+            android:layout_height="45dp"
+            android:inputType="textCapSentences"
+            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+            android:layout_weight="1"
+            android:id="@+id/l_title"/>
+
+        <Spinner
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/shapforbutton"
+            android:id="@+id/radious"
+            android:layout_weight="2" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="6">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/shapforlist"
+            android:gravity="left|center"
+            android:inputType="phone"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:layout_height="match_parent"
+            android:hint="Tell to other"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:id="@+id/l_allcontact"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shapforbutton"
+            android:src="@drawable/ic_person_add"
+            android:id="@+id/l_contactlist"
+            android:layout_weight="5" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="6">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/shapforlist"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:inputType="textPersonName"
+            android:layout_height="match_parent"
+            android:hint="Search "
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:id="@+id/l_serch"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shapforbutton"
+            android:src="@drawable/ic_search_black_24dp"
+            android:id="@+id/l_searchbtn"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tayyabali.remindmefinel1.LocationActivitys" />
+
+</LinearLayout>

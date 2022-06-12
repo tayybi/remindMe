@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Text Note"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="   Title"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shapforlistin"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:id="@+id/t_title" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/shapforlistin"
+        android:inputType="textCapSentences"
+        android:hint="    Description"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="left"
+        android:id="@+id/t_description" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <TextView
+            android:text="Cancel"
+            android:textSize="25dp"
+            android:layout_width="0dp"
+            android:gravity="right|center"
+            android:textStyle="bold"
+            android:paddingRight="35dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:id="@+id/cancel"
+            android:layout_weight="2" />
+
+        <TextView
+            android:text="Save"
+            android:gravity="right|center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:paddingRight="45dp"
+            android:layout_width="0dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:id="@+id/save"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
